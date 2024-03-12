@@ -1,0 +1,45 @@
+# Fabric notebook source
+
+# METADATA ********************
+
+# META {
+# META   "dependencies": {
+# META     "lakehouse": {
+# META       "default_lakehouse": "894538a7-a495-4a91-a5cb-a71dc284e1a8",
+# META       "default_lakehouse_name": "CLEO",
+# META       "default_lakehouse_workspace_id": "97377b7f-3479-428a-b07f-e4c97a60fc3b"
+# META     }
+# META   }
+# META }
+
+# MARKDOWN ********************
+
+# # Load Rolls Files
+
+# PARAMETERS CELL ********************
+
+file_name = "Test Files/CLEO - Amendments.xlsx"
+save_table = "eh_exclusions"
+sheet_name = "EH Exclusions"
+
+
+# MARKDOWN ********************
+
+
+# CELL ********************
+
+import pandas
+import pyspark
+from pyspark.sql import SparkSession
+
+import os
+spark_session = SparkSession.builder.getOrCreate()
+full_file_name = "/lakehouse/default/Files/" + file_name
+df=pandas.read_excel( full_file_name, sheet_name=sheet_name)
+df.columns = df.columns.str.replace(' ', '_')
+df.columns = df.columns.str.replace('(', '')
+df.columns = df.columns.str.replace(')', '')
+df_sp = spark_session.createDataFrame(df)
+df_sp.write.option("overwriteSchema", "true").mode("overwrite").format("delta").saveAsTable(save_table)
+display(df)
+

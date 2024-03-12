@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "CLEO Pipeline Rolls Import"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "84f68b3b-62fa-4bd6-8e55-5b1305321bb0"
+  }
+}
