@@ -19,8 +19,8 @@
 # PARAMETERS CELL ********************
 
 file_name = "Test Files/CLEO - Amendments.xlsx"
-save_table = "eh_exclusions"
-sheet_name = "EH Exclusions"
+save_table = "at_inclusions"
+sheet_name = "AT Inclusions"
 
 
 # MARKDOWN ********************
@@ -28,7 +28,7 @@ sheet_name = "EH Exclusions"
 
 # CELL ********************
 
-# Test comment
+# Import Files from Excel and write to lakehouse
 import pandas
 import pyspark
 from pyspark.sql import SparkSession
@@ -36,7 +36,7 @@ from pyspark.sql import SparkSession
 import os
 spark_session = SparkSession.builder.getOrCreate()
 full_file_name = "/lakehouse/default/Files/" + file_name
-df=pandas.read_excel( full_file_name, sheet_name=sheet_name)
+df=pandas.read_excel( full_file_name, sheet_name=sheet_name, header=0)
 df.columns = df.columns.str.replace(' ', '_')
 df.columns = df.columns.str.replace('(', '')
 df.columns = df.columns.str.replace(')', '')

@@ -14,8 +14,9 @@
 
 # PARAMETERS CELL ********************
 
-rolls_file = "CLEO.wwadbhrolls"
-logic_file = "CLEO.wwbhad"
+rolls_file = "CLEO.wwsportsbh_filtered"
+logic_file = "CLEO.wwbhsports"
+output_table = "wwbhsports_merged"
 
 # MARKDOWN ********************
 
@@ -27,7 +28,9 @@ logic_file = "CLEO.wwbhad"
 import pyspark
 from pyspark.sql.functions import concat_ws
 
-dfl = spark.sql("SELECT * FROM CLEO.wwbhad LIMIT 1000")
+query1 = f"SELECT * FROM {logic_file}"
+
+dfl = spark.sql(query1)
 
 query = f"SELECT r.*, CASE WHEN b.Revised_Product_Group IS NULL THEN a.Revised_Product_Group \
                  ELSE b.Revised_Product_Group END AS Revised_Product_Group\
@@ -35,13 +38,12 @@ query = f"SELECT r.*, CASE WHEN b.Revised_Product_Group IS NULL THEN a.Revised_P
                  LEFT JOIN CLEO.alt_cat_b b ON CONCAT(r.Group,r.Category)=CONCAT(b.Group,b.Category)\
                  LEFT JOIN CLEO.alt_cat_a a ON a.Product_Group=r.Product_Group\
                  LIMIT 1000"
-# need to parameterise based on rolls, input and output file (merged)
 
-# Code here to add join col to rolls file based on look up in Alt Cat A and Alt Cat B
+# Join Logic and Rolls File based on RPG
 df = spark.sql(query)
 display(df)
 display(dfl)
 
 df2=df.join(dfl, df.Revised_Product_Group == dfl.Product_Group_Logic, "left")
 display(df2)
-df2.write.mode("overwrite").format("delta").saveAsTable("wwbhad_merged")
+df2.write.mode("overwrite").format("delta").saveAsTable(f"{output_table}")
