@@ -31,6 +31,9 @@ outputTable = "wwadbh_filtered"
 
 # CELL ********************
 
+from pyspark.sql.functions import lit
+
+
 query = f"SELECT * FROM CLEO.{rollsFile} r \
                 WHERE r.brand not in (select bex.brand FROM CLEO.brand_exclusions bex) AND\
                       r.productId not in(select gex.SKU FROM CLEO.global_exclusions gex) AND\
@@ -41,12 +44,7 @@ query = f"SELECT * FROM CLEO.{rollsFile} r \
 df = spark.sql(query)
 
 tableName = f"{outputTable}"
+newdf = df.withColumn("Gender", lit(rollsFile[:2]))
+newdf.write.mode("overwrite").format("delta").saveAsTable(tableName)
 
-df.write.mode("overwrite").format("delta").saveAsTable(tableName)
-
-display(df)
-
-# CELL ********************
-
-df = spark.sql("SELECT * FROM CLEO.wwadbhrolls r WHERE r.Brand = 'Boohoo' LIMIT 1000")
-display(df)
+display(newdf)
