@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "CLEO PBI Report Fabric UAT"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d1e97958-f645-4c8d-8788-9fc2881437f1"
+  }
+}

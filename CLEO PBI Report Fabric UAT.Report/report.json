@@ -1,0 +1,172 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "asos_bar5287508825817973.jpg",
+            "path": "asos_bar5287508825817973.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Group Level",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 1000.00,
+      "name": "ReportSection",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"b2efbcb009ea23501600\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":806.0514000019114,\"z\":0,\"width\":380.5143545954969,\"height\":171.37669405446042,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"FC Summary Group.New Group\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FC Summary Group\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"New Group\"},\"Name\":\"FC Summary Group.New Group\",\"NativeReferenceName\":\"New Group\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 171.38,
+          "width": 380.51,
+          "x": 0.00,
+          "y": 806.05,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d36378416b9a97100add\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":103.11648540564993,\"z\":2000,\"width\":1176.39934054333,\"height\":307.8971113520814,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"FC Summary Group.New Group\"},{\"queryRef\":\"Sum(FC Summary Group.BH)\"},{\"queryRef\":\"Sum(FC Summary Group.EH)\"},{\"queryRef\":\"Sum(FC Summary Group.AT)\"},{\"queryRef\":\"FC Summary Group.Total Actual Group\"},{\"queryRef\":\"Sum(FC Summary Group.BH Target)\"},{\"queryRef\":\"Sum(FC Summary Group.EH Target)\"},{\"queryRef\":\"Sum(FC Summary Group.AT Target)\"},{\"queryRef\":\"FC Summary Group.Total Target Group\"},{\"queryRef\":\"FC Summary Group.Var £ Group\"},{\"queryRef\":\"FC Summary Group.Var % Group\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FC Summary Group\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"New Group\"},\"Name\":\"FC Summary Group.New Group\",\"NativeReferenceName\":\"New Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Actual Group\"},\"Name\":\"FC Summary Group.Total Actual Group\",\"NativeReferenceName\":\"Total Actual Group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"BH Target\"},\"Name\":\"Sum(FC Summary Group.BH Target)\",\"NativeReferenceName\":\"BH Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"EH Target\"},\"Name\":\"Sum(FC Summary Group.EH Target)\",\"NativeReferenceName\":\"EH Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AT Target\"},\"Name\":\"Sum(FC Summary Group.AT Target)\",\"NativeReferenceName\":\"AT Target\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Target Group\"},\"Name\":\"FC Summary Group.Total Target Group\",\"NativeReferenceName\":\"Total Target Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Var £ Group\"},\"Name\":\"FC Summary Group.Var £ Group\",\"NativeReferenceName\":\"Var £ Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Var % Group\"},\"Name\":\"FC Summary Group.Var % Group\",\"NativeReferenceName\":\"Var %\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"BH\"}},\"Function\":0},\"Name\":\"Sum(FC Summary Group.BH)\",\"NativeReferenceName\":\"Sum of BH\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"EH\"}},\"Function\":0},\"Name\":\"Sum(FC Summary Group.EH)\",\"NativeReferenceName\":\"Sum of EH\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AT\"}},\"Function\":0},\"Name\":\"Sum(FC Summary Group.AT)\",\"NativeReferenceName\":\"Sum of AT\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Actual Group\"}}}]},\"columnProperties\":{\"FC Summary Group.Var % Group\":{\"displayName\":\"Var %\"},\"Sum(FC Summary Data.FC04 Berlin)\":{\"displayName\":\"EH Actual\"},\"Sum(FC Summary Data.FC01 Barnsley)\":{\"displayName\":\"BH Actual\"},\"Sum(FC Summary Data.FC03 Atlanta)\":{\"displayName\":\"AT Actual\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"FC Summary Group.Total Actual Group\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"FC Summary Group.Total Target Group\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ADE424'\"}}}}}},\"selector\":{\"metadata\":\"FC Summary Group.Var £ Group\"}}],\"values\":[{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"FC Summary Group.Var £ Group\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"FC Summary Group\"}},\"Property\":\"Var % Group\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#D64550'\"}},\"value\":{\"Literal\":{\"Value\":\"-1D\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#57F414'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#D64550'\"}},\"value\":{\"Literal\":{\"Value\":\"1D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"FC Summary Group.Var % Group\"}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 307.90,
+          "width": 1176.40,
+          "x": 0.00,
+          "y": 103.12,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ee36059c06c0cc35805b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1175.8647828724972,\"height\":103.66923810349311,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"asos_bar5287508825817973.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 103.67,
+          "width": 1175.86,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"215L\"}}}}}]}}",
+      "displayName": "By Division",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection121e45a3d02662a1e185",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"a9a82f2c0d0715c0650d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1175.8647828724972,\"height\":103.66923810349311,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"asos_bar5287508825817973.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 103.67,
+          "width": 1175.86,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d581e8d5080000900ebc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":103.66923810349311,\"z\":0,\"width\":1212.788073155933,\"height\":535.3877091098205,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"FC Summary By Division.Gender\"},{\"queryRef\":\"FC Summary By Division.New Group\"},{\"queryRef\":\"FC Summary By Division.Product_Group\"},{\"queryRef\":\"FC Summary By Division.ASOS DESIGN Actual\"},{\"queryRef\":\"FC Summary By Division.PARTNER BRANDS Actual\"},{\"queryRef\":\"FC Summary By Division.SPORTS & OUTDOOR Actual\"},{\"queryRef\":\"FC Summary By Division.TS, TM & VENTURE Actual\"},{\"queryRef\":\"FC Summary By Division.Actual Total\"},{\"queryRef\":\"FC Summary By Division.ASOS DESIGN Target\"},{\"queryRef\":\"FC Summary By Division.PARTNER BRANDS Target\"},{\"queryRef\":\"FC Summary By Division.SPORTS & OUTDOOR Target\"},{\"queryRef\":\"FC Summary By Division.TS, TM & VENTURE Target\"},{\"queryRef\":\"FC Summary By Division.Target Total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FC Summary By Division\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gender\"},\"Name\":\"FC Summary By Division.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"New Group\"},\"Name\":\"FC Summary By Division.New Group\",\"NativeReferenceName\":\"New Group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product_Group\"},\"Name\":\"FC Summary By Division.Product_Group\",\"NativeReferenceName\":\"Product_Group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ASOS DESIGN Actual\"},\"Name\":\"FC Summary By Division.ASOS DESIGN Actual\",\"NativeReferenceName\":\"AD\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"PARTNER BRANDS Actual\"},\"Name\":\"FC Summary By Division.PARTNER BRANDS Actual\",\"NativeReferenceName\":\"PB\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SPORTS & OUTDOOR Actual\"},\"Name\":\"FC Summary By Division.SPORTS & OUTDOOR Actual\",\"NativeReferenceName\":\"Sports\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TS, TM & VENTURE Actual\"},\"Name\":\"FC Summary By Division.TS, TM & VENTURE Actual\",\"NativeReferenceName\":\"Venture\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ASOS DESIGN Target\"},\"Name\":\"FC Summary By Division.ASOS DESIGN Target\",\"NativeReferenceName\":\"AD Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"PARTNER BRANDS Target\"},\"Name\":\"FC Summary By Division.PARTNER BRANDS Target\",\"NativeReferenceName\":\"PB Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SPORTS & OUTDOOR Target\"},\"Name\":\"FC Summary By Division.SPORTS & OUTDOOR Target\",\"NativeReferenceName\":\"Sports Target\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Actual Total\"},\"Name\":\"FC Summary By Division.Actual Total\",\"NativeReferenceName\":\"Actual Total\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Target Total\"},\"Name\":\"FC Summary By Division.Target Total\",\"NativeReferenceName\":\"Target Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TS, TM & VENTURE Target\"},\"Name\":\"FC Summary By Division.TS, TM & VENTURE Target\",\"NativeReferenceName\":\"Venture Target\"}]},\"columnProperties\":{\"FC Summary By Division.ASOS DESIGN Actual\":{\"displayName\":\"AD\"},\"FC Summary By Division.PARTNER BRANDS Actual\":{\"displayName\":\"PB\"},\"FC Summary By Division.SPORTS & OUTDOOR Actual\":{\"displayName\":\"Sports\"},\"FC Summary By Division.TS, TM & VENTURE Actual\":{\"displayName\":\"Venture\"},\"FC Summary By Division.ASOS DESIGN Target\":{\"displayName\":\"AD Target\"},\"FC Summary By Division.PARTNER BRANDS Target\":{\"displayName\":\"PB Target\"},\"FC Summary By Division.SPORTS & OUTDOOR Target\":{\"displayName\":\"Sports Target\"},\"FC Summary By Division.TS, TM & VENTURE Target\":{\"displayName\":\"Venture Target\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 535.39,
+          "width": 1212.79,
+          "x": 0.00,
+          "y": 103.67,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Charts",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection5bb8478d019eea80cc76",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"127dc93cb4a260b94bd1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.121495327102803,\"y\":34.691588785046726,\"z\":0,\"width\":594.5420560747664,\"height\":538.3177570093458,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Division Chart Data.MixTY)\"},{\"queryRef\":\"Sum(Division Chart Data.AMP Mix)\"}],\"Category\":[{\"queryRef\":\"Division Chart Data.Division\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Sum(Division Chart Data.Vs AMP)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"Division Chart Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Division\"},\"Name\":\"Division Chart Data.Division\",\"NativeReferenceName\":\"Division\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"MixTY\"}},\"Function\":0},\"Name\":\"Sum(Division Chart Data.MixTY)\",\"NativeReferenceName\":\"Sum of MixTY\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"AMP Mix\"}},\"Function\":0},\"Name\":\"Sum(Division Chart Data.AMP Mix)\",\"NativeReferenceName\":\"Sum of AMP Mix\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Vs AMP\"}},\"Function\":0},\"Name\":\"Sum(Division Chart Data.Vs AMP)\",\"NativeReferenceName\":\"Sum of Vs AMP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"MixTY\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'bevel'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Above'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9AE780'\"}}}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(Division Chart Data.Vs AMP)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(Division Chart Data.MixTY)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ADE424'\"}}}}}},\"selector\":{\"metadata\":\"Sum(Division Chart Data.AMP Mix)\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 538.32,
+          "width": 594.54,
+          "x": 25.12,
+          "y": 34.69,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f3433b088079e9a32ccb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":34.691588785046726,\"z\":1000,\"width\":613.6822429906542,\"height\":538.3177570093458,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(FC Chart Data.Mix TY)\"},{\"queryRef\":\"Sum(FC Chart Data.AMP Mix)\"}],\"Category\":[{\"queryRef\":\"FC Chart Data.FC\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Sum(FC Chart Data.Vs AMP)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f1\",\"Entity\":\"FC Chart Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"FC\"},\"Name\":\"FC Chart Data.FC\",\"NativeReferenceName\":\"FC\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Mix TY\"}},\"Function\":0},\"Name\":\"Sum(FC Chart Data.Mix TY)\",\"NativeReferenceName\":\"Sum of Mix TY\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"AMP Mix\"}},\"Function\":0},\"Name\":\"Sum(FC Chart Data.AMP Mix)\",\"NativeReferenceName\":\"Sum of AMP Mix\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Vs AMP\"}},\"Function\":0},\"Name\":\"Sum(FC Chart Data.Vs AMP)\",\"NativeReferenceName\":\"Sum of Vs AMP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Mix TY\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'bevel'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Above'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9AE780'\"}}}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ADE424'\"}}}}}},\"selector\":{\"metadata\":\"Sum(FC Chart Data.AMP Mix)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(FC Chart Data.Mix TY)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(FC Chart Data.Vs AMP)\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 538.32,
+          "width": 613.68,
+          "x": 640.00,
+          "y": 34.69,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Main Stock Movement",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 1000.00,
+      "name": "ReportSectione989b6c3305eab2cde0e",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"557ef3235ee837d78b0c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":1175.8647828724972,\"height\":103.66923810349311,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"asos_bar5287508825817973.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 103.67,
+          "width": 1175.86,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9a24ba3690cd32e0ae55\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":806.0514000019114,\"z\":1000,\"width\":380.5143545954969,\"height\":171.37669405446042,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"FC Summary Data.Buying_Division\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FC Summary Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Buying_Division\"},\"Name\":\"FC Summary Data.Buying_Division\",\"NativeReferenceName\":\"Buying_Division\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 171.38,
+          "width": 380.51,
+          "x": 0.00,
+          "y": 806.05,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c251fcf3046e2e1999c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":103.11648540564993,\"z\":0,\"width\":1199.636858381223,\"height\":617.2465675690312,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"FC Summary Data.Gender\"},{\"queryRef\":\"FC Summary Data.New Group\"},{\"queryRef\":\"FC Summary Data.Product_Group\"},{\"queryRef\":\"Sum(FC Summary Data.FC01 Barnsley)\"},{\"queryRef\":\"Sum(FC Summary Data.FC04 Berlin)\"},{\"queryRef\":\"Sum(FC Summary Data.FC03 Atlanta)\"},{\"queryRef\":\"FC Summary Data.Total Actual\"},{\"queryRef\":\"Sum(FC Summary Data.BH Target)\"},{\"queryRef\":\"Sum(FC Summary Data.EH Target)\"},{\"queryRef\":\"Sum(FC Summary Data.AT Target)\"},{\"queryRef\":\"FC Summary Data.Total Target\"},{\"queryRef\":\"FC Summary Data.Var £\"},{\"queryRef\":\"FC Summary Data.Var %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FC Summary Data\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Target\"},\"Name\":\"FC Summary Data.Total Target\",\"NativeReferenceName\":\"Total Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"New Group\"},\"Name\":\"FC Summary Data.New Group\",\"NativeReferenceName\":\"Final Group Class\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"BH Target\"},\"Name\":\"Sum(FC Summary Data.BH Target)\",\"NativeReferenceName\":\"BH Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"EH Target\"},\"Name\":\"Sum(FC Summary Data.EH Target)\",\"NativeReferenceName\":\"EH Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AT Target\"},\"Name\":\"Sum(FC Summary Data.AT Target)\",\"NativeReferenceName\":\"AT Target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gender\"},\"Name\":\"FC Summary Data.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product_Group\"},\"Name\":\"FC Summary Data.Product_Group\",\"NativeReferenceName\":\"Product_Group\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"FC01 Barnsley\"}},\"Function\":0},\"Name\":\"Sum(FC Summary Data.FC01 Barnsley)\",\"NativeReferenceName\":\"BH Actual\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"FC04 Berlin\"}},\"Function\":0},\"Name\":\"Sum(FC Summary Data.FC04 Berlin)\",\"NativeReferenceName\":\"EH Actual\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"FC03 Atlanta\"}},\"Function\":0},\"Name\":\"Sum(FC Summary Data.FC03 Atlanta)\",\"NativeReferenceName\":\"AT Actual\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Actual\"},\"Name\":\"FC Summary Data.Total Actual\",\"NativeReferenceName\":\"Total Actual\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Var £\"},\"Name\":\"FC Summary Data.Var £\",\"NativeReferenceName\":\"Var £\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Var %\"},\"Name\":\"FC Summary Data.Var %\",\"NativeReferenceName\":\"Var %\"}]},\"columnProperties\":{\"FC Summary Data.New Group\":{\"displayName\":\"Final Group Class\"},\"Sum(FC Summary Data.FC01 Barnsley)\":{\"displayName\":\"BH Actual\"},\"Sum(FC Summary Data.FC04 Berlin)\":{\"displayName\":\"EH Actual\"},\"Sum(FC Summary Data.FC03 Atlanta)\":{\"displayName\":\"AT Actual\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"FC Summary Data.Total Target\"}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 617.25,
+          "width": 1199.64,
+          "x": 0.00,
+          "y": 103.12,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
