@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "Logic Refresh"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5098a2fb-ff62-44a0-9c78-8794ddc4eef8"
+  }
+}
