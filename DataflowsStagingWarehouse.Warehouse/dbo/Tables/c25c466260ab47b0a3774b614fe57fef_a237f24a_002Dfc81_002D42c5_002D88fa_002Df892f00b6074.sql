@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[2500ebb987c54a40a86584ef38851579_cleo_005Fmerged_002Eparquet] (
+CREATE TABLE [dbo].[c25c466260ab47b0a3774b614fe57fef_a237f24a_002Dfc81_002D42c5_002D88fa_002Df892f00b6074] (
 
 	[Column1] bigint NULL, 
 	[Column2] varchar(8000) NULL, 

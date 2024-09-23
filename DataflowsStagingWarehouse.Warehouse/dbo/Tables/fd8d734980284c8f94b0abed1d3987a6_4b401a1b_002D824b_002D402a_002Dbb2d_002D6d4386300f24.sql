@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[fd8d734980284c8f94b0abed1d3987a6_4b401a1b_002D824b_002D402a_002Dbb2d_002D6d4386300f24] (
+
+	[Column1] varchar(8000) NULL, 
+	[Column2] varchar(8000) NULL
+);
+

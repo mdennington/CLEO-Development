@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.128.602.0 (24.04)"
+        "value": "2.128.1002.0 (24.04)"
       }
     ],
     "culture": "en-US",
@@ -6314,28 +6314,22 @@
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
     "relationships": [
       {
-        "name": "c8a327df-0fac-43c6-9ecc-e3cbf4a48fcc",
-        "fromColumn": "Product_Group",
-        "fromTable": "CLEOReportData",
-        "toColumn": "Product_Group",
-        "toTable": "FC Summary By Division"
-      },
-      {
         "name": "86858fe8-a96b-4ac5-b660-b18fa5feafb1",
         "fromColumn": "Product_Group",
         "fromTable": "FC Summary Data",
+        "isActive": false,
         "toColumn": "Product_Group",
         "toTable": "FC Summary By Division"
       },
       {
-        "name": "AutoDetected_97515ecf-40a2-4a47-9af1-e02838f58a7b",
+        "name": "AutoDetected_07ae02f6-2292-4c38-80b1-90c76949188f",
         "crossFilteringBehavior": "bothDirections",
         "fromCardinality": "one",
-        "fromColumn": "FC03 Atlanta",
-        "fromTable": "FC Summary Data",
+        "fromColumn": "BH Target",
+        "fromTable": "FC Summary Group",
         "isActive": false,
-        "toColumn": "FC03 Atlanta",
-        "toTable": "CLEOReportData"
+        "toColumn": "BH Target",
+        "toTable": "FC Summary Data"
       }
     ],
     "sourceQueryCulture": "en-GB",
@@ -6346,10 +6340,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -6693,10 +6683,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -6849,10 +6835,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -7098,10 +7080,6 @@
         "name": "FC Summary Group",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
@@ -7314,10 +7292,6 @@
         "name": "FC Summary By Division",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
@@ -7516,10 +7490,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -7650,10 +7620,6 @@
       {
         "name": "FC Chart Data",
         "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
           {
             "name": "PBI_ResultType",
             "value": "Table"

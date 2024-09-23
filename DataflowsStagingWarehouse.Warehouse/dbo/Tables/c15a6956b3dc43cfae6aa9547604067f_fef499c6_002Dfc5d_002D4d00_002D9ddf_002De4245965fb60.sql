@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[206adf93c3144d009b842735a764976f_cleo_005Fmerged_002Eparquet] (
+CREATE TABLE [dbo].[c15a6956b3dc43cfae6aa9547604067f_fef499c6_002Dfc5d_002D4d00_002D9ddf_002De4245965fb60] (
 
 	[Column1] bigint NULL, 
 	[Column2] varchar(8000) NULL, 
@@ -85,8 +85,8 @@ CREATE TABLE [dbo].[206adf93c3144d009b842735a764976f_cleo_005Fmerged_002Eparquet
 	[Column83] varchar(8000) NULL, 
 	[Column84] varchar(8000) NULL, 
 	[Column85] varchar(8000) NULL, 
-	[Column86] float NULL, 
-	[Column87] bigint NULL, 
+	[Column86] varchar(8000) NULL, 
+	[Column87] float NULL, 
 	[Column88] bigint NULL, 
 	[Column89] bigint NULL, 
 	[Column90] bigint NULL, 
@@ -108,7 +108,8 @@ CREATE TABLE [dbo].[206adf93c3144d009b842735a764976f_cleo_005Fmerged_002Eparquet
 	[Column106] bigint NULL, 
 	[Column107] bigint NULL, 
 	[Column108] bigint NULL, 
-	[Column109] float NULL, 
-	[Column110] float NULL
+	[Column109] bigint NULL, 
+	[Column110] float NULL, 
+	[Column111] float NULL
 );
 

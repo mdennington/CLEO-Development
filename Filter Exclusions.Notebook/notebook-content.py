@@ -3,6 +3,9 @@
 # METADATA ********************
 
 # META {
+# META   "kernel_info": {
+# META     "name": "synapse_pyspark"
+# META   },
 # META   "dependencies": {
 # META     "lakehouse": {
 # META       "default_lakehouse": "894538a7-a495-4a91-a5cb-a71dc284e1a8",
@@ -25,9 +28,16 @@
 
 # PARAMETERS CELL ********************
 
-rollsFile = "wwadbhrolls"
-exclusionFile = "bh_exclusions"
-outputTable = "wwadbh_filtered"
+rollsFile = "wwpbehrolls"
+exclusionFile = "eh_exclusions"
+outputTable = "wwpbeh_filtered"
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
 
 # CELL ********************
 
@@ -48,3 +58,10 @@ newdf = df.withColumn("Gender", lit(rollsFile[:2]))
 newdf.write.mode("overwrite").format("delta").saveAsTable(tableName)
 
 display(newdf)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }

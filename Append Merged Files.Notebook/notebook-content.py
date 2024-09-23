@@ -3,6 +3,9 @@
 # METADATA ********************
 
 # META {
+# META   "kernel_info": {
+# META     "name": "synapse_pyspark"
+# META   },
 # META   "dependencies": {
 # META     "lakehouse": {
 # META       "default_lakehouse": "894538a7-a495-4a91-a5cb-a71dc284e1a8",
@@ -16,21 +19,6 @@
 
 # ## Append Files together
 
-
-# CELL ********************
-
-df = spark.sql("SELECT COUNT(*) FROM CLEO.wwadbh_merged")
-display(df)
-
-# CELL ********************
-
-df = spark.sql("SELECT COUNT(*) FROM CLEO.wwadeh_merged")
-display(df)
-
-# CELL ********************
-
-df = spark.sql("SELECT * FROM CLEO.wwadat_merged")
-display(df)
 
 # CELL ********************
 
@@ -56,7 +44,31 @@ df = spark.sql("SELECT * FROM CLEO.wwadat_merged\
                 UNION ALL\
                 SELECT * FROM CLEO.wwventurebh_merged\
                 UNION ALL\
-                SELECT * FROM CLEO.wwventureeh_merged")
+                SELECT * FROM CLEO.wwventureeh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwadat_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwadbh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwadeh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwpbat_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwpbbh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwpbeh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwsportsat_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwsportsbh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwsportseh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwventureat_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwventurebh_merged\
+                UNION ALL\
+                SELECT * FROM CLEO.mwventureeh_merged")
 display(df.count())
 
 df.write.mode("overwrite").format("delta").saveAsTable("cleo_merged")

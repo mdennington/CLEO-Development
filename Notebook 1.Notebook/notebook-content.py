@@ -3,6 +3,9 @@
 # METADATA ********************
 
 # META {
+# META   "kernel_info": {
+# META     "name": "synapse_pyspark"
+# META   },
 # META   "dependencies": {
 # META     "lakehouse": {
 # META       "default_lakehouse": "894538a7-a495-4a91-a5cb-a71dc284e1a8",
@@ -14,9 +17,16 @@
 
 # PARAMETERS CELL ********************
 
-rolls_file = "CLEO.wwsportsbh_filtered"
-logic_file = "CLEO.wwbhsports"
-output_table = "wwbhsports_merged"
+rolls_file = "CLEO.mwventureat_filtered"
+logic_file = "CLEO.mwatventure"
+output_table = "mwatventure_merged"
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
 
 # MARKDOWN ********************
 
@@ -41,9 +51,13 @@ query = f"SELECT r.*, CASE WHEN b.Revised_Product_Group IS NULL THEN a.Revised_P
 
 # Join Logic and Rolls File based on RPG
 df = spark.sql(query)
-display(df)
-display(dfl)
-
 df2=df.join(dfl, df.Revised_Product_Group == dfl.Product_Group_Logic, "left")
 display(df2)
-df2.write.mode("overwrite").format("delta").saveAsTable(f"{output_table}")
+#df2.write.mode("overwrite").format("delta").saveAsTable(f"{output_table}")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
