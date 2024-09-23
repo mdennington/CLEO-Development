@@ -72,3 +72,10 @@ df = spark.sql("SELECT * FROM CLEO.wwadat_merged\
 display(df.count())
 
 df.write.mode("overwrite").format("delta").saveAsTable("cleo_merged")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
