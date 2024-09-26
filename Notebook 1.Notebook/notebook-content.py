@@ -53,7 +53,7 @@ query = f"SELECT r.*, CASE WHEN b.Revised_Product_Group IS NULL THEN a.Revised_P
 df = spark.sql(query)
 df2=df.join(dfl, df.Revised_Product_Group == dfl.Product_Group_Logic, "left")
 display(df2)
-#df2.write.mode("overwrite").format("delta").saveAsTable(f"{output_table}")
+df2.write.mode("overwrite").format("delta").saveAsTable(f"{output_table}")
 
 # METADATA ********************
 

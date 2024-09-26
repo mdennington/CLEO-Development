@@ -3,6 +3,9 @@
 # METADATA ********************
 
 # META {
+# META   "kernel_info": {
+# META     "name": "synapse_pyspark"
+# META   },
 # META   "dependencies": {
 # META     "lakehouse": {
 # META       "default_lakehouse": "894538a7-a495-4a91-a5cb-a71dc284e1a8",
@@ -22,6 +25,13 @@ file_name = "Test Files/CLEO - Amendments.xlsx"
 save_table = "at_inclusions"
 sheet_name = "AT Inclusions"
 
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
 
 # MARKDOWN ********************
 
@@ -44,3 +54,10 @@ df_sp = spark_session.createDataFrame(df)
 df_sp.write.option("overwriteSchema", "true").mode("overwrite").format("delta").saveAsTable(save_table)
 display(df)
 
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
