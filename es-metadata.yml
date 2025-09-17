@@ -1,0 +1,8 @@
+schemaVersion: 0.0.1
+isProduction: false
+accountableOwners:
+  service: c1d4950d-723b-4985-8bc1-c9f53556fcdd
+routing:
+  defaultAreaPath:
+    org: hmg
+    path: Labeller Sandbox
